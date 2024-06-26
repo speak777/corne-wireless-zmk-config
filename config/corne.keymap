@@ -1,12 +1,9 @@
-#line 4 "/Users/johndev/Dev/miryoku_zmk/miryoku/miryoku.dtsi"
 
 #include <behaviors/mouse_key_press.dtsi>
 
-#line 1 "/Users/johndev/Dev/miryoku_zmk/miryoku/
 
-custom_combo.dtsi {
-    "
-/
+
+/{
 
     combos {
         compatible = "zmk,combos";
@@ -19,7 +16,6 @@ custom_combo.dtsi {
     };
 };
 
-#line 18 "/Users/johndev/Dev/miryoku_zmk/miryoku/miryoku.dtsi"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -135,11 +131,8 @@ custom_combo.dtsi {
     };
 };
 
-#line 20 "/Users/johndev/Dev/miryoku_zmk/miryoku/
 
-miryoku_shift_functions.dtsi {
-    "
-/
+/{
 
     macros {
         u_macro_u_bt_sel_0: u_macro_u_bt_sel_0 {
@@ -279,11 +272,9 @@ miryoku_shift_functions.dtsi {
     };
 };
 
-#line 18 "/Users/johndev/Dev/miryoku_zmk/miryoku/
 
-miryoku_double_tap_guard.dtsi {
-    "
-/
+
+/{
 
     behaviors {
         u_to_U_BASE: u_to_U_BASE {
@@ -394,11 +385,9 @@ miryoku_double_tap_guard.dtsi {
     };
 };
 
-#line 4 "/Users/johndev/Dev/miryoku_zmk/miryoku/
 
-miryoku_mousekeys.dtsi {
-    "
-/
+    
+/{
 
     macros {
         u_macro_btn1: u_macro_btn1 {
@@ -432,11 +421,9 @@ miryoku_mousekeys.dtsi {
     };
 };
 
-#line 4 "/Users/johndev/Dev/miryoku_zmk/miryoku/
 
-miryoku_behaviors.dtsi {
-    "
-/
+    
+/{
 
     behaviors {
         u_mt: u_mt {
