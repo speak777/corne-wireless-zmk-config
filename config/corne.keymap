@@ -94,10 +94,10 @@
         SYM {
             display-name = "Sym";
             bindings = <
-&none  &kp LPAR  &kp RPAR  &kp CARET  &kp SEMI   &kp COLON    &kp MINUS  &kp AT       &kp HASH       &kp PRCNT  &kp TILDE  &none
-&none  &kp LBRC  &kp RBRC  &kp LT     &kp EQUAL  &kp GT       &kp PLUS   &kp LSHFT    &kp LCTRL      &kp LALT   &kp LGUI   &none
-&none  &kp LBKT  &kp RBKT  &kp AMPS   &kp PIPE   &kp EXCL     &kp SLASH  &u_to_U_SYM  &u_to_U_MOUSE  &kp RALT   &none      &none
-                           &kp DLLR   &kp UNDER  &kp ASTRK    &none      &none        &none
+&none  &kp LPAR  &kp RPAR  &kp AT    &kp SEMI   &kp COLON    &kp MINUS  &kp CARET    &kp HASH       &kp PRCNT  &kp TILDE  &none
+&none  &kp LBRC  &kp RBRC  &kp LT    &kp EQUAL  &kp GT       &kp PLUS   &kp LSHFT    &kp LCTRL      &kp LALT   &kp LGUI   &none
+&none  &kp LBKT  &kp RBKT  &kp AMPS  &kp PIPE   &kp EXCL     &kp SLASH  &u_to_U_SYM  &u_to_U_MOUSE  &kp RALT   &none      &none
+                           &kp DLLR  &kp UNDER  &kp ASTRK    &none      &none        &none
             >;
         };
 
@@ -114,7 +114,6 @@
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -126,8 +125,7 @@
     };
 };
 
-/{
-
+/ {
     macros {
         u_macro_u_bt_sel_0: u_macro_u_bt_sel_0 {
             compatible = "zmk,behavior-macro";
@@ -266,10 +264,7 @@
     };
 };
 
-
-
-/{
-
+/ {
     behaviors {
         u_to_U_BASE: u_to_U_BASE {
             compatible = "zmk,behavior-tap-dance";
@@ -379,10 +374,7 @@
     };
 };
 
-
-    
-/{
-
+/ {
     macros {
         u_macro_btn1: u_macro_btn1 {
             compatible = "zmk,behavior-macro";
@@ -415,10 +407,7 @@
     };
 };
 
-
-    
-/{
-
+/ {
     behaviors {
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
