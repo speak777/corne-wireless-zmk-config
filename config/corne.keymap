@@ -17,7 +17,7 @@
 &none  &kp Q         &kp W         &kp E          &kp R          &kp T            &kp Y          &kp U          &kp I          &kp O           &kp P           &none
 &none  &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G            &kp H          &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &none
 &none  &u_lt 3 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N          &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 3 SLASH   &none
-                                   &u_lt 6 ESC    &u_lt 4 TAB    &u_lt 5 ENTER    &u_lt 8 SPACE  &u_lt 7 BSPC   &u_lt 9 DEL
+                                   &u_lt 6 ESC    &u_lt 4 TAB    &u_lt 5 SPACE    &u_lt 8 ENTER  &u_lt 7 BSPC   &u_lt 9 DEL
             >;
         };
 
@@ -54,10 +54,10 @@
         NAV {
             display-name = "Nav";
             bindings = <
-&none  &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &kp K_AGAIN   &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
-&none  &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT     &none    &u_caps_word  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   &none
-&none  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp INS       &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &none
-                                 &none          &none         &none    &kp RET       &kp BSPC     &kp DEL
+&none  &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &none           &none          &none        &none      &none         &none
+&none  &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
+&none  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none         &none
+                                 &none          &none         &none    &kp RET         &kp BSPC       &kp DEL
             >;
         };
 
