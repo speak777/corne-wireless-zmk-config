@@ -16,8 +16,48 @@
             bindings = <
 &kp ESCAPE  &kp Q         &kp W         &kp E          &kp R          &kp T            &kp Y          &kp U          &kp I          &kp O           &kp P           &none
 &kp F13     &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G            &kp H          &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &none
-&none       &u_lt 6 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N          &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 6 SLASH   &none
-                                        &u_lt 1 ESC    &u_lt 2 TAB    &u_lt 3 ENTER    &u_lt 4 SPACE  &u_lt 5 BSPC   &u_lt 6 DEL
+&none       &u_lt 2 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N          &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 2 SLASH   &none
+                                        &u_lt 5 ESC    &u_lt 3 TAB    &u_lt 4 ENTER    &u_lt 7 SPACE  &u_lt 6 BSPC   &u_lt 8 DEL
+            >;
+        };
+
+        EXTRA {
+            display-name = "Extra";
+            bindings = <
+&none  &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O           &kp P           &none
+&none  &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G          &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &none
+&none  &u_lt 2 Z     &u_mt RALT X  &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 2 SLASH   &none
+                                   &u_lt 5 ESC    &u_lt 3 SPACE  &u_lt 4 TAB    &u_lt 7 RET  &u_lt 6 BSPC   &u_lt 8 DEL
+            >;
+        };
+
+        BUTTON {
+            display-name = "Button";
+            bindings = <
+&none  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
+&none  &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHFT    &none          &none        &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI    &none
+&none  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
+                                &mkp MB3     &mkp MB1     &mkp MB2       &mkp MB2     &mkp MB1     &mkp MB3
+            >;
+        };
+
+        NAV {
+            display-name = "Nav";
+            bindings = <
+&none  &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &none           &none          &none        &none      &none         &none
+&none  &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
+&none  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none         &none
+                                 &none          &none         &none    &kp RET         &kp BSPC       &kp DEL
+            >;
+        };
+
+        MOUSE {
+            display-name = "Mouse";
+            bindings = <
+&none  &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE   &none    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
+&none  &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT      &none    &none        &kp KP_N4    &kp KP_N2    &kp KP_N8    &kp KP_N6   &none
+&none  &none        &kp RALT     &u_to_U_SYM    &u_to_U_MOUSE  &none    &none        &none        &none        &none        &none       &none
+                                 &none          &none          &none    &mkp MB2     &mkp MB1     &mkp MB3
             >;
         };
 
@@ -31,23 +71,13 @@
             >;
         };
 
-        NAV {
-            display-name = "Nav";
-            bindings = <
-&none  &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &none           &none          &none        &none      &none         &none
-&none  &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &none
-&none  &none        &kp RALT     &kp LG(C)      &kp LG(V)     &none    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none         &none
-                                 &none          &none         &none    &kp RET         &kp BSPC       &kp DEL
-            >;
-        };
-
         NUM {
             display-name = "Num";
             bindings = <
-&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
-&none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &none  &none
-&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
-                          &kp DOT  &kp N0  &kp MINUS    &none  &kp KP_NUMBER_0  &kp KP_DOT
+&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &none
+&none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &none
+&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &u_to_U_NUM   &u_to_U_NAV    &kp RALT     &none        &none
+                          &kp DOT  &kp N0  &kp MINUS    &none  &none         &none
             >;
         };
 
@@ -62,23 +92,12 @@
         };
 
         FUN {
+            display-name = "Fun";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans     &trans  &trans  &trans
-            >;
-
-            label = "Function";
-        };
-
-        BUTTON {
-            display-name = "Button";
-            bindings = <
-&none  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &soft_off
-&none  &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHFT    &none          &none        &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI    &none
-&none  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
-                                &mkp MB3     &mkp MB1     &mkp MB2       &mkp MB2     &mkp MB1     &mkp MB3
+&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &none
+&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &none
+&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &u_to_U_FUN   &u_to_U_MEDIA  &kp RALT     &none        &none
+                        &kp K_APP  &kp SPACE  &kp TAB            &none  &none         &none
             >;
         };
     };
@@ -92,11 +111,6 @@
             timeout-ms = <50>;
             bindings = <&kp F13>;
             key-positions = <31 32>;
-        };
-
-        soft-off {
-            bindings = <&soft_off>;
-            key-positions = <0 11>;
         };
     };
 };
@@ -257,7 +271,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 1>;
         };
     };
 };
@@ -279,7 +293,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 6>;
+            bindings = <&none>, <&to 2>;
         };
     };
 };
@@ -290,7 +304,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 2>;
+            bindings = <&none>, <&to 3>;
         };
     };
 };
@@ -301,7 +315,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 4>;
         };
     };
 };
@@ -312,7 +326,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 1>;
+            bindings = <&none>, <&to 5>;
         };
     };
 };
@@ -323,7 +337,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 6>;
         };
     };
 };
@@ -334,7 +348,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 7>;
         };
     };
 };
@@ -345,7 +359,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 8>;
         };
     };
 };
